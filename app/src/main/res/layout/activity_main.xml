@@ -15,7 +15,7 @@
         android:ems="10"
         android:hint="Insert your name"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,18 +28,18 @@
         android:ems="10"
         android:hint="enter your age"
         android:inputType="textPersonName"
-        android:text="Age"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNome" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
+        android:layout_width="360dp"
+        android:layout_height="59dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
+        android:onClick="mInserir"
         android:text="Insert"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etIdade"
-        android:onClick="mInserir"/>
+        app:layout_constraintTop_toBottomOf="@+id/etIdade" />
 </androidx.constraintlayout.widget.ConstraintLayout>
