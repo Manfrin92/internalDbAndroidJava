@@ -14,32 +14,42 @@
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Insert your name"
-        android:inputType="textPersonName"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etIdade"
+        android:id="@+id/etEmail"
         android:layout_width="361dp"
         android:layout_height="43dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="enter your age"
-        android:inputType="textPersonName"
+        android:hint="Insert your email"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+    <EditText
+        android:id="@+id/etMatricula"
+        android:layout_width="361dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Insert your register name"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="360dp"
         android:layout_height="59dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
         android:onClick="mInserir"
         android:text="Insert"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etIdade" />
+        app:layout_constraintTop_toBottomOf="@+id/etMatricula" />
 </androidx.constraintlayout.widget.ConstraintLayout>

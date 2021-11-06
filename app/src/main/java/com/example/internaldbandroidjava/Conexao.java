@@ -7,21 +7,21 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class Conexao extends SQLiteOpenHelper {
-    private static final String name = "banco.db";
-    private static final int version = 1;
+    private static final String nome = "banco.db";
+    private static final  int versao = 2;
 
-    public Conexao(@Nullable Context context) {
-        super(context, name, null, version);
+    public Conexao(Context context) {
+        super(context, nome, null, versao);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE pessoa (id integer primary key autoincrement, nome varchar(50), idade integer)");
-        
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        String sql = "CREATE TABLE estudante (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, email TEXT, matricula INTEGER);";
+
+
+
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
-    }
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) { }
 }
